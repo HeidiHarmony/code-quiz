@@ -1,1 +1,67 @@
 /*CSS placeholder*/
+main, section, div {
+    padding: 10px;
+    margin: 5px;
+    border-style: groove;
+    border-width: 2px;
+    border-color:lightslategray;
+    background-color:slategrey;
+}
+
+main {
+    background-color:black;
+    width: 750px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section {
+    width: 100%;
+}
+
+section div {
+    background-color:aliceblue;
+}
+
+#first-row, #sixth-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#timekeeping {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#countdown {
+    flex-basis: 66%;
+}
+
+#verify {
+    flex-basis: 66%;
+}
+
+h1, h2, ol, li, p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 15 px;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 150%;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 125%;
+    font-weight: 500;
+}

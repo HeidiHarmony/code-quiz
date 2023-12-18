@@ -2,36 +2,59 @@
 <html>
  
 <head>
-    <title></title>
+    <title>Syntax Stumper Coding Quiz</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   
   <body>
-    <!-- Header -->
-    <header>
-    </header>
-
-    <!-- Navbar -->
-    <nav>
-    </nav>
-
-    <!-- Body -->
+  
     <main>
-      <!-- Sidebar -->
-      <aside>
-      </aside>
-      <!-- Section -->
-      <div>
-        <section>
+      <section id="first-row">
+        <div id="view-scores">
+          <p><a>View the high score hall of fame</a></p>
+        </div>
+        <div id="timekeeping">
+          <div id="hourglass"></div>
+          <div id="countdown"></div>
+        </div>
+      </section>
+      <section id="second-row">
+        <div id="Title">
+          <h1>Syntax Stumper</h1>
+          <h2>You vs. The Code</h2>
+        </div>
         </section>
-      </div>
+        <section id="third-row">
+          <div id="button-space">
+            <button type="button" id="begin">Begin Quiz</button>
+            <button type="button" id="again">Play Again</button>
+            <img src="images/gearhead.gif" alt="animation of gears spinning in the head">
+          </div>
+        </section>
+        <section id="fourth-row">
+          <div id="question">
+            <h2>text to be replaced by questions</h2>
+          </div>
+        </section>
+        <section id="fifth-row">
+          <!--Each list of answers will have one <li> classed as "correct"-->
+          <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+        </section>
+        <section id="sixth-row">
+          <div id="verify">
+            <!--modify through DOM-->
+            <p>correct or incorrect</p>
+          </div>
+          <div id="score"></div>
+        </section>
     </main>
-
-    <!-- Footer -->
-    <footer>
-    </footer>
   </body>
   
 </html>
