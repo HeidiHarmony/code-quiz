@@ -6,55 +6,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ndy1zuo.css" />
   </head>
   
   <body>
   
     <main>
       <section id="first-row">
-        <div id="view-scores">
+        <div id="view-scores" class = "begin">
           <p><a>View the high score hall of fame</a></p>
         </div>
-        <div id="timekeeping">
+        <div id="timekeeping" class= "play">
           <div id="hourglass"></div>
           <div id="countdown"></div>
         </div>
       </section>
       <section id="second-row">
-        <div id="Title">
-          <h1>Syntax Stumper</h1>
+        <div id="Title" class="persistent">
+          <h1>Syntax <span>Stumper</span></h1>
           <h2>You vs. The Code</h2>
         </div>
         </section>
         <section id="third-row">
           <div id="button-space">
-            <button type="button" id="begin">Begin Quiz</button>
-            <button type="button" id="again">Play Again</button>
-            <img src="images/gearhead.gif" alt="animation of gears spinning in the head">
+            <a href="#" id="begin-quiz" class="begin button">
+            Begin Quiz
+            </a>
+            <a href="#" id="again" class="end button">
+              Play Again
+            </a>
+            <img src="images/gearhead.gif" class = "play" alt="animation of gears spinning in the head">
           </div>
         </section>
         <section id="fourth-row">
-          <div id="question">
-            <h2>text to be replaced by questions</h2>
+          <div id="question" >
+            <h2 id="placeholder-text" id = "play"></h2>
           </div>
         </section>
         <section id="fifth-row">
-          <!--Each list of answers will have one <li> classed as "correct"-->
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <!--Each list of answers will have one <li> classed as "correct-answer"-->
+          <ol id="quiz-question" class="play">
+            <li id ="quiz-answer1"></li>
+            <li id ="quiz-answer2"></li>
+            <li id ="quiz-answer3"></li>
+            <li id ="quiz-answer4"></li>
           </ol>
         </section>
         <section id="sixth-row">
           <div id="verify">
             <!--modify through DOM-->
-            <p>correct or incorrect</p>
+            <p id="correct-or-incorrect"></p>
           </div>
-          <div id="score"></div>
+          <div id="score" class = "play"></div>
         </section>
     </main>
+    <script sec="questions.js"></script>
+    <script src="script.js"></script>
   </body>
   
 </html>
